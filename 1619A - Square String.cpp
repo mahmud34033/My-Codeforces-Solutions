@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <string>
 #include <numeric>
+#define ll long long
+#define nl endl
 using namespace std;
 
 int main()

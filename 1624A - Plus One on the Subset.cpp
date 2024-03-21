@@ -14,15 +14,11 @@ int main()
     while(t--){
         int n;
         cin >> n;
-        int a[n];
-        for(int i = 0; i < n; i++){
-            cin >> a[i];
-        }
-        int minn = *min_element(a, a+n);
-        int sum=0;
-        sum = accumulate(a, a+n, sum);
-        sum = sum-(minn*n);
-        cout << sum << endl;
+        ll a[n], minn, maxx;
+        for(int i = 0; i < n; i++) cin >> a[i];
+        minn = *min_element(a, a+n);
+        maxx = *max_element(a, a+n);
+        cout << maxx-minn << nl;
     }
 
     return 0;
