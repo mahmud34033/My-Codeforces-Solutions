@@ -33,8 +33,8 @@ int main()
     cin >> n;
     while (true)
     {
-        bool a = is_prime(i);
-        bool b = is_prime(n-i);
+        int a = is_prime(i);
+        int b = is_prime(n-i);
         if(a==0 && b==0) break;
         ++i;
     }
